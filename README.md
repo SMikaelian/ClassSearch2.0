@@ -13,3 +13,34 @@ Academic Data typically exists for users, but:
   - UI/UX design are severely lacking.
   - Data needs to be accessed increasing via a mobile platform.
   - The experience needs to be more convenient for the user.
+
+# To Run Locally
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
