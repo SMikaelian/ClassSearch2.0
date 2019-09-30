@@ -8,12 +8,19 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Filter from "@/components/Filter.vue";
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    Filter
   }
 };
 </script>
+
+
+/*
+how to use:
+1) generate the URI
+2) provide the data:
+3) show the results */
