@@ -50,24 +50,24 @@ var filteredObject = [{
     }]
 }, ]
 
-function () = {
+function () {
     function MilitaryCovert(filteredObject) {
         //var time = "16:30:00"; // they input as example
 
         //filteredObject = filteredObject.split(':'); // convert to array
-        var time = filteredObject[0].meetings[0].start_time('');
-        var time1 = filteredObject[0].meetings[0].end_time('');
+        var time = filteredObject[0].meetings[0].start_time['']; // start_time
+        var time1 = filteredObject[0].meetings[0].end_time['']; // end_time
 
         // fetch for start_time
-        var hours = Number(time[0] + time[1]);
-        var minutes = Number(time[2] + time[3]);
+        var hours = Number(time + time);
+        var minutes = Number(time + time);
         //var seconds = Number(filteredObject[2]); remove here. (unnecessary)
 
         // second fetch for end_time
-        var hours1 = Number(time1[0] + time1[1]);
-        var minutes1 = Number(time1[2] + time1[3]);
+        var hours1 = Number(time1 + time1);
+        var minutes1 = Number(time1 + time1);
 
-        // calculate
+        // calculate for start_time
         var timeValue;
         if (hours > 0 && hours <= 12) {
             timeValue = "" + hours;
@@ -77,7 +77,7 @@ function () = {
             timeValue = "12";
         }
 
-        // calculate1
+        // calculate1 for end_time
         var timeValue1;
         if (hours > 0 && hours <= 12) {
             timeValue1 = "" + hours1;
@@ -100,29 +100,10 @@ function () = {
         // show
         console.log(timeValue);
         console.log(timeValue1);
+        // for (var i = 0; i < filteredObject; i++) {
 
-        // this "for" loop is looking the time from different classes.
-        for (let i = 0; i < 2; i++) {
-            console.log(time[]);
-            console.log();
-        }
-        // TODO! not call the function in the CLI. all i need to do is 
-        // TODO: NOTE using console.log(filteredObject[0].meetings[0].start_time) // important to dive the array
-    }
-
-    function yourDateObject() {
-        // var day = yourDateObject.getDay();
-        // var isWeekend = (day === 6) || (day === 0); // 6 = Saturday, 0 = Sunday
-        var days = new Date();
-        var weekday = new Array(7); //Sunday to Sat as known 7 days
-        weekday[0] = "Sunday";
-        weekday[1] = "Monday";
-        weekday[2] = "Tuesday";
-        weekday[3] = "Wednesday";
-        weekday[4] = "Thursday";
-        weekday[5] = "Friday";
-        weekday[6] = "Saturday";
-        var n = weekday[days.getDate()];
+        // }
+        // * NOTE using console.log(filteredObject[0].meetings[0].start_time) // important to dive the array
     }
 
     function classFilter(preferences, APIresponse) {
@@ -131,19 +112,18 @@ function () = {
     }
 
     function options() = {
-        // TODO!! -> What is the best practice when displaying data from more than one table?
-        //courses level
+        /* //courses level
         course_level = 0, // meaning lower division maybe
         course_level = 1, // upper division
 
         //day of week and weekend
         /*         day_of_week: 'MW', //Monday and Wednesday
                 day_of_week1: 'TTH', //Tuesday and Thursday
-                day_of_weekend: 'FS' // Friday and Saturday ---academic level */
+                day_of_weekend: 'FS' // Friday and Saturday ---academic level
         // ...include the rest of the preferences that were in the figma component
         // means lower division
         var undergraduate = 0
-        var graduate = 0;
+        var graduate = 0; */
     }
 }();
 
