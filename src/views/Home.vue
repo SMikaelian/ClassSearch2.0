@@ -24,7 +24,7 @@ export default {
   name: "home",
   components: {
 
-     Result
+     Result,
 
     LandingPage
 
