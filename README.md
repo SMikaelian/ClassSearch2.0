@@ -6,8 +6,6 @@ We are placing the user experience at the forefront, putting Agile/Scrum methodo
 We are leveraging existing JSON-based web services and data sets from http://api.metalab.csun.edu.
 This web application can be easily extended to for other Universities if desired.
 
-testing
-
 With this project, we are hoping to address the following issues:
 Academic Data typically exists for users, but:
   - UI/UX design are severely lacking.
