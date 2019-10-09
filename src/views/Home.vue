@@ -17,3 +17,10 @@ export default {
   }
 };
 </script>
+
+
+/*
+how to use:
+1) generate the URI
+2) provide the data:
+3) show the results */
