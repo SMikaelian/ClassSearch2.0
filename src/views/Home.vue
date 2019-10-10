@@ -1,8 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <img alt="CSUN Logo" src="../assets/logo.jpg" width="40%" />
     <LandingPage msg="Class Search 2.0" />
-    <p>Howdy</p>
   </div>
 </template>
 
