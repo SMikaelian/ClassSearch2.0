@@ -1,19 +1,19 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <LandingPage msg="Class Search 2.0" />
-    <p>Howdy</p>
+    <img alt="" />
+    <HelloWorld msg="Class Search 2.0" />
+    <p>Nothing to see here.</p>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import LandingPage from "@/components/LandingPage.vue";
+import HelloWorld from "@/components/Filters.vue";
 
 export default {
   name: "home",
   components: {
-    LandingPage
+    HelloWorld
   }
 };
 </script>
